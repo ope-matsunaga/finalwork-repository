@@ -9,7 +9,7 @@ phases:
       - export PATH=$HOME/bin:$PATH
   build:
     commands:
-      - aws deploy push --application-name finalwork-app --s3-location s3://finalwork-bucket000/artifact.zip --source src
+      - aws deploy push --application-name finalwork-app --s3-location s3://finalwork-bucket000/artifact.zip --source src --debug 
 artifacts:
   files:
     - '**/*'
